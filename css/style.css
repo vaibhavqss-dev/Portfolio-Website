@@ -1104,7 +1104,7 @@ html, body {
 }
 
 .img {
-    background: url(/MyPortfolio/static/media/Banner%20Background.5af7808546d013d4a37b.jpg);
+    background: url("../media/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
