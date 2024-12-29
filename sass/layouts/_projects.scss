@@ -1,0 +1,141 @@
+
+
+
+/* My Projects Starts From here */
+.MyProjects_Heading {
+    text-align: center;
+    font-size: 2.7vh;
+  }
+  
+  .MyProjects_Heading h2 {
+    letter-spacing: 1vh;
+  }
+  
+  .MyProjects_Heading h2::after {
+    display: block;
+    content: '';
+    background-color: yellow;
+    width: 6vw;
+    border-radius: 1vh;
+    height: 0.8vh;
+    position: absolute;
+    left: 96vh;
+    margin-top: 1vh;
+  }
+  
+  /* Project Section Starts From  */
+  .projects_section {
+    margin: 8vh;
+    /* font-size: 2.8vh; */
+  }
+  
+  /* Project WOrk start from here */
+  .projects_work {
+    margin-top: 10vh;
+    display: flex;
+  }
+  
+  .Projects_work_Image_Container {
+    position: relative;
+  }
+  
+  .Projects_work_Image_Container p {
+    position: absolute;
+    top: 23vh;
+    font-weight: bolder;
+    font-size: 3vh;
+    display: none;
+    left: 3vw;
+    letter-spacing: 0.3vh;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
+  }
+  
+  .projects_work img {
+    width: 47vw;
+    box-shadow: 5px 5px 9px rgb(51, 48, 48);
+    border-radius: 5px;
+    transition: filter 1.5s, transform 2s;
+  }
+  
+  .projects_work img:hover {
+    filter: brightness(74%);
+    /* opacity: 0.8; */
+    transform: scale(1.1);
+  }
+  
+  .projects_info h4 {
+    margin-top: 0.9vh;
+  }
+  
+  .projects_info {
+    margin-left: 4vh;
+    font-size: 2.7vh;
+    /* text-align: center; */
+  }
+  
+  .projects_info button {
+    padding: 2vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px black;
+  }
+  
+  .projects_info button:hover {
+    background-color: gray;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .projects_info a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.6vh;
+  }
+  
+  /* For Mobile View  */
+  @media screen and (max-width: 609px) {
+    .MyProjects_Heading {
+      font-size: 2vh;
+    }
+  
+    .MyProjects_Heading h2::after {
+      left: 52vw;
+      width: 19vw;
+      height: 0.5vh;
+    }
+  
+    .projects_info {
+      margin-left: 0vh;
+    }
+  
+    .projects_work {
+  
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .projects_work img {
+      width: 91vw;
+    }
+  
+    .projects_info {
+      width: 84vw;
+      font-size: 2vh;
+    }
+  
+    .projects_info button {
+      padding: 1vh;
+    }
+  
+    .projects_info a {
+      font-size: 1.6vh;
+    }
+  
+    .projects_section {
+      margin: 2.4vh;
+    }
+  }

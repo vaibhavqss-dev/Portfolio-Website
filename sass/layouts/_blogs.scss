@@ -1,0 +1,146 @@
+
+/* Blogs Section Starts From Here */
+.Myblogs_heading h3 {
+    text-align: center;
+    font-size: 4vh;
+    letter-spacing: 1.4vh;
+  }
+  
+  .Myblogs_heading p {
+    text-align: center;
+    font-size: 2.6vh;
+  }
+  
+  .Myblogs_heading h3::after {
+    content: '';
+    background-color: yellow;
+    width: 6vw;
+    border-radius: 9vh;
+    height: 0.9vh;
+    position: relative;
+    display: block;
+    left: 51vw;
+    margin: 1vh;
+  }
+  
+  .Myblogs_section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  
+  
+  .Blog_Container {
+    width: 29vw;
+    padding: 1vh;
+    text-align: center;
+    font-size: 2.2vh;
+    border-radius: 1vh;
+    box-shadow: 4px 4px 9px black;
+    margin-top: 5vh;
+  }
+  
+  
+  
+  .ImgContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1vh;
+    background-color: black;
+  }
+  
+  .ImgContainer img {
+    position: relative;
+    width: 30vw;
+    height: 34vh;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 2s;
+  }
+  
+  .ImgContainer img:hover {
+    transform: scale(1.2);
+  }
+  
+  .Imgtext {
+    position: absolute;
+    color: white;
+    top: 12vh;
+    left: 1vw;
+    backdrop-filter: blur(2px);
+    padding: 1vh;
+    text-align: left;
+  }
+  
+  .Imgtext p {
+    font-size: 2.9vh;
+  }
+  
+  .Imgtext article {
+    text-overflow: ellipsis;
+  }
+  
+  /* Blogs Link starts From  */
+  .Explore_Blogs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5vh;
+  
+  }
+  
+  .Explore_Blogs a {
+    box-shadow: 5px 5px 9px black;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(211, 211, 63);
+    padding: 1.3vh;
+    font-size: 3vh;
+    border-radius: 1vh;
+    margin: 4vh;
+  }
+  
+  /* Mobile View Starts From Here */
+  @media screen and (max-width: 609px) {
+    .Myblogs_heading h3 {
+      letter-spacing: 0.4vh;
+    }
+  
+    .Myblogs_heading h3::after {
+      width: 24vw;
+      margin-top: -0.1vh;
+      height: 0.5vh;
+    }
+  
+    .Myblogs_section {
+      display: flex;
+      margin: 0vh;
+      padding: 0vh;
+      justify-content: center;
+    }
+  
+    .Blog_Container {
+      width: 80vw;
+      padding: 0.5vh;
+      /* height: 40vh; */
+    }
+  
+    .Blog_Container img {
+      margin: 2vh;
+      height: 35vh;
+    }
+  
+    .Explore_Blogs {
+      top: 2vh;
+    }
+  
+    .Explore_Blogs a {
+      padding: 1vh;
+      font-size: 2vh;
+    }
+  
+  }
+  
+  
+  

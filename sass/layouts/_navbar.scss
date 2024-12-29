@@ -1,0 +1,58 @@
+/* This one for Navigation bar */
+.navigation-section {
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+  width: 100vw;
+  background-color: #222222;
+  padding: 0.7rem;
+  box-shadow: -2px 0px 20px 4px black;
+
+  &_ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    & li {
+      margin: 0 2rem 0 0;
+
+      & a {
+        text-decoration: none;
+      }
+
+      & button {
+        letter-spacing: 0.1vh;
+        color: white;
+        font-size: 1.3rem;
+        padding: 0.4rem;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0px solid black;
+        transition: transform 0.4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    & img {
+      margin: 0 1rem 0 0;
+      height: 2rem;
+
+      &:hover {
+        transform: rotateY(360deg);
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .Nav-items {
+    display: none;
+  }
+}
