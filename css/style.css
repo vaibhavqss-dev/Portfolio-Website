@@ -187,17 +187,14 @@
     margin: 0.6vh;
   }
 }
-/* My Projects Starts From here */
-.MyProjects_Heading {
+.projects_heading {
   text-align: center;
   font-size: 2.7vh;
 }
-
-.MyProjects_Heading h2 {
+.projects_heading h2 {
   letter-spacing: 1vh;
 }
-
-.MyProjects_Heading h2::after {
+.projects_heading h2::after {
   display: block;
   content: "";
   background-color: yellow;
@@ -208,77 +205,63 @@
   left: 96vh;
   margin-top: 1vh;
 }
-
-/* Project Section Starts From  */
 .projects_section {
-  margin: 8vh;
-  /* font-size: 2.8vh; */
+  margin: 4rem;
+}
+.projects_section_bharatsevaplus {
+  display: flex;
+  justify-content: space-around;
+}
+.projects_section_bharatsevaplus_img > img {
+  width: 40rem;
+}
+.projects_section_bharatsevaplus_img > a {
+  width: 1rem;
+}
+.projects_section_bharatsevaplus_info {
+  text-align: center;
 }
 
 /* Project WOrk start from here */
 .projects_work {
-  margin-top: 10vh;
+  margin-top: 2rem;
   display: flex;
 }
-
-.Projects_work_Image_Container {
-  position: relative;
-}
-
-.Projects_work_Image_Container p {
-  position: absolute;
-  top: 23vh;
-  font-weight: bolder;
-  font-size: 3vh;
-  display: none;
-  left: 3vw;
-  letter-spacing: 0.3vh;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  color: white;
-}
-
 .projects_work img {
-  width: 47vw;
+  width: 40rem;
   box-shadow: 5px 5px 9px rgb(51, 48, 48);
   border-radius: 5px;
   transition: filter 1.5s, transform 2s;
 }
-
 .projects_work img:hover {
   filter: brightness(74%);
-  /* opacity: 0.8; */
   transform: scale(1.1);
 }
 
 .projects_info h4 {
-  margin-top: 0.9vh;
+  margin-top: 1rem;
 }
 
 .projects_info {
-  margin-left: 4vh;
+  margin-left: 2rem;
   font-size: 2.7vh;
-  /* text-align: center; */
 }
-
 .projects_info button {
-  padding: 2vh;
-  border-radius: 1vh;
+  padding: 0.7rem;
+  border-radius: 1rem;
   border: none;
   background-color: transparent;
   box-shadow: 5px 5px 5px black;
 }
-
 .projects_info button:hover {
   background-color: gray;
   cursor: pointer;
   border: none;
 }
-
 .projects_info a {
   text-decoration: none;
   color: black;
-  font-size: 2.6vh;
+  font-size: 1rem;
 }
 
 /* For Mobile View  */
@@ -432,94 +415,32 @@
     font-size: 2vh;
   }
 }
-/* Blogs Section Starts From Here */
-.Myblogs_heading h3 {
+.myblogs_heading h3 {
   text-align: center;
-  font-size: 4vh;
-  letter-spacing: 1.4vh;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
 }
-
-.Myblogs_heading p {
+.myblogs_heading p {
   text-align: center;
-  font-size: 2.6vh;
+  font-size: 1rem;
 }
-
-.Myblogs_heading h3::after {
+.myblogs_heading h3::after {
   content: "";
   background-color: yellow;
-  width: 6vw;
-  border-radius: 9vh;
-  height: 0.9vh;
+  width: 9rem;
+  border-radius: 1rem;
+  height: 0.3rem;
   position: relative;
   display: block;
-  left: 51vw;
-  margin: 1vh;
+  margin: 0 auto;
 }
-
-.Myblogs_section {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-}
-
-.Blog_Container {
-  width: 29vw;
-  padding: 1vh;
-  text-align: center;
-  font-size: 2.2vh;
-  border-radius: 1vh;
-  box-shadow: 4px 4px 9px black;
-  margin-top: 5vh;
-}
-
-.ImgContainer {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1vh;
-  background-color: black;
-}
-
-.ImgContainer img {
-  position: relative;
-  width: 30vw;
-  height: 34vh;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: transform 2s;
-}
-
-.ImgContainer img:hover {
-  transform: scale(1.2);
-}
-
-.Imgtext {
-  position: absolute;
-  color: white;
-  top: 12vh;
-  left: 1vw;
-  backdrop-filter: blur(2px);
-  padding: 1vh;
-  text-align: left;
-}
-
-.Imgtext p {
-  font-size: 2.9vh;
-}
-
-.Imgtext article {
-  text-overflow: ellipsis;
-}
-
-/* Blogs Link starts From  */
-.Explore_Blogs {
+.myblogs_explore {
   display: flex;
   justify-content: center;
   position: relative;
   top: 5vh;
 }
-
-.Explore_Blogs a {
+.myblogs_explore a {
   box-shadow: 5px 5px 9px black;
   text-decoration: none;
   color: black;
@@ -528,6 +449,52 @@
   font-size: 3vh;
   border-radius: 1vh;
   margin: 4vh;
+}
+
+.myblogs_section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.myblogs_section_blog {
+  width: 21rem;
+  height: 12rem;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 9px black;
+  margin-top: 3rem;
+}
+.myblogs_section_blog_img {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: transform 2s;
+}
+.myblogs_section_blog_img > img {
+  width: 20rem;
+  border-radius: 0.7rem;
+}
+.myblogs_section_blog_img:hover {
+  transform: scale(1.2);
+}
+.myblogs_section_blog_img_text {
+  width: 20rem;
+  position: absolute;
+  color: white;
+  top: 4rem;
+  left: 0.4rem;
+  backdrop-filter: blur(2px);
+  padding: 1vh;
+  text-align: left;
+}
+.myblogs_section_blog_img_text > p {
+  font-size: 1.2rem;
+}
+.myblogs_section_blog_img_text > article {
+  text-overflow: ellipsis;
 }
 
 /* Mobile View Starts From Here */
@@ -563,66 +530,56 @@
     font-size: 2vh;
   }
 }
-/* This Section Contain Contact Me Section */
-.ContactMe {
-  margin-top: 14vh;
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
-
-.ContactMe_Heading {
+.contact_heading {
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
 }
-
-.ContactMe_Heading h3 {
-  letter-spacing: 0.5vh;
-  font-size: 3.5vh;
+.contact_heading > h3 {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
 }
-
-.ContactMe_Heading h3::after {
+.contact_heading > h3::after {
   content: "";
   background-color: yellow;
   width: 9vw;
-  border-radius: 2vh;
-  height: 1vh;
+  border-radius: 1rem;
+  height: 0.5rem;
   position: relative;
-  left: 50vw;
-  margin-top: 1vh;
+  left: 50%;
+  margin-top: 1rem;
   display: block;
 }
-
-/* Contact Me Email Goes Here */
-.ContactME_Form {
+.contact_form {
   text-align: center;
-  height: 0.4vh;
-  margin: 9vh;
-  border-radius: 1vh;
+  height: 0.4rem;
+  margin: 2rem;
+  border-radius: 1rem;
   transition: transform 1s, box-shadow 1.6s;
 }
-
-.ContactME_Form a {
-  font-size: 2.6vh;
-  border-radius: 1vh;
+.contact_form a {
+  font-size: 1.5rem;
+  border-radius: 1rem;
   background-color: yellow;
-  padding: 2vh;
+  padding: 1rem;
   text-decoration: none;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 0.3rem 0.3rem 0.5rem black;
   box-sizing: border-box;
   color: black;
 }
-
-.ContactME_Form:hover {
-  box-shadow: 0px 8vh 1px yellow;
-  transform: translate(0px, -20px);
+.contact_form:hover {
+  box-shadow: 0 2rem 0.1rem yellow;
+  transform: translate(0, -2rem);
 }
-
-/* THis one for SVG */
-.ContactMe_link {
+.contact_form_link {
   display: float;
   justify-content: center;
 }
-
-.ContactMe_link img {
-  width: 4vh;
+.contact_form_link img {
+  width: 2rem;
 }
 
 /* Mobile View Goes Here */

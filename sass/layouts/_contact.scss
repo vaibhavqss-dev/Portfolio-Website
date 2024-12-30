@@ -1,81 +1,73 @@
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 
-/* This Section Contain Contact Me Section */
+  &_heading {
+    text-align: center;
+    font-size: 1.5rem;
 
-.ContactMe {
-    margin-top: 14vh;
+    &>h3 {
+      letter-spacing: 0.5rem;
+      font-size: 2rem;
+
+      &::after {
+        content: '';
+        background-color: yellow;
+        width: 9vw;
+        border-radius: 1rem;
+        height: 0.5rem;
+        position: relative;
+        left: 50%;
+        margin-top: 1rem;
+        display: block;
+      }
+    }
   }
-  
-  .ContactMe_Heading {
+  &_form{
     text-align: center;
-    font-size: 2.5vh;
-  }
-  
-  .ContactMe_Heading h3 {
-    letter-spacing: 0.5vh;
-    font-size: 3.5vh;
-  
-  }
-  
-  .ContactMe_Heading h3::after {
-    content: '';
-    background-color: yellow;
-    width: 9vw;
-    border-radius: 2vh;
-    height: 1vh;
-    position: relative;
-    left: 50vw;
-    margin-top: 1vh;
-    display: block;
-  }
-  
-  /* Contact Me Email Goes Here */
-  .ContactME_Form {
-    text-align: center;
-    height: 0.4vh;
-    margin: 9vh;
-    border-radius: 1vh;
+    height: 0.4rem;
+    margin: 2rem;
+    border-radius: 1rem;
     transition: transform 1s, box-shadow 1.6s;
-  
+
+    & a {
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      background-color: yellow;
+      padding: 1rem;
+      text-decoration: none;
+      box-shadow: 0.3rem 0.3rem 0.5rem black;
+      box-sizing: border-box;
+      color: black;
+    }
+
+    &:hover {
+      box-shadow: 0 2rem 0.1rem yellow;
+      transform: translate(0, -2rem);
+    }
+
+    &_link{
+      display: float;
+      justify-content: center;
+
+      img {
+        width: 2rem;
+      }
+    }
   }
-  
+}
+
+/* Mobile View Goes Here */
+@media screen and (max-width: 609px) {
   .ContactME_Form a {
-    font-size: 2.6vh;
-    border-radius: 1vh;
-    background-color: yellow;
-    padding: 2vh;
-    text-decoration: none;
-    box-shadow: 3px 3px 5px black;
-    box-sizing: border-box;
-    color: black;
+    padding: 1vh;
+    font-size: 2vh;
   }
-  
-  .ContactME_Form:hover {
-    box-shadow: 0px 8vh 1px yellow;
-    transform: translate(0px, -20px);
+
+  .ContactMe_Heading h3::after {
+    width: 23vw;
+    height: 0.5vh;
+    margin: 0.3vh;
   }
-  
-  /* THis one for SVG */
-  .ContactMe_link {
-    display: float;
-    justify-content: center;
-  }
-  
-  .ContactMe_link img {
-    width: 4vh;
-  }
-  
-  /* Mobile View Goes Here */
-  @media screen and (max-width: 609px) {
-    .ContactME_Form a {
-      padding: 1vh;
-      font-size: 2vh;
-    }
-  
-    .ContactMe_Heading h3::after {
-      width: 23vw;
-      height: 0.5vh;
-      margin: 0.3vh;
-    }
-  
-  }
-  
+
+}
