@@ -72,12 +72,9 @@
     display: none;
   }
 }
-/* Main Body Content Start from here */
-/* About ME Heading Starts From Here */
 .about-me {
   font-family: poppins;
-  display: flex;
-  justify-content: center;
+  padding: 4.5rem;
 }
 .about-me_heading {
   text-align: center;
@@ -86,20 +83,17 @@
   margin-top: 1rem;
   font-size: 2rem;
 }
-.about-me_heading p {
-  font-size: 1.2rem;
-  font-family: Poppins;
-}
-.about-me_heading::after {
-  margin-top: 1rem;
+.about-me_heading h3::after {
   content: "";
   display: block;
-  background-color: rgb(114, 114, 38);
-  width: 10rem;
-  height: 0.5rem;
-  border-radius: 23px;
-  position: relative;
-  left: 42%;
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ffdb0e;
+  margin: 0.5rem auto;
+}
+.about-me_heading p {
+  font-size: 1rem;
+  font-family: Poppins;
 }
 .about-me_side_containers {
   display: flex;
@@ -126,36 +120,32 @@
 .ContactmeBtn {
   background-color: transparent;
   margin: 5vh 0px 0px 0px;
-  padding: 2vh;
+  padding: 1rem;
   box-shadow: 5px 5px 9px black;
   border-radius: 7px;
   border: none;
-  font-size: 2.9vh;
+  font-size: 1.2rem;
   cursor: pointer;
 }
-
 .ContactmeBtn:hover {
-  color: rgb(80, 78, 78);
-  background-color: rgb(170, 169, 169);
+  background-color: rgb(223, 224, 224);
 }
 
-.BOX_containers {
+.box-section {
   display: flex;
   flex-wrap: wrap;
 }
-
-.BOX {
+.box-section_box {
   background-color: transparent;
-  box-shadow: 6px 9px 5px #a0a0a0;
-  margin: 0.6rem;
+  box-shadow: 1px 6px 8px 5px #a0a0a0;
+  margin: 0.4rem;
   padding: 0.8rem 1.6rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   border-radius: 7px;
   transition: background-color 0.4s;
 }
-
-.BOX:hover {
+.box-section_box:hover {
   background-color: rgb(223, 224, 224);
 }
 
@@ -450,7 +440,6 @@
     font-size: 2vh;
   }
 }
-/* Blogs Section Starts From Here */
 .Myblogs_heading h3 {
   text-align: center;
   font-size: 2rem;
