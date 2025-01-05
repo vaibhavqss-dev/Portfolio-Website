@@ -1,138 +1,31 @@
-
-/* Test Typing Animation */
-.TextAnimation_Container {
-    margin: 3vh;
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201e1e;
+  color: white;
+  
+  &_left {
+    padding: 3rem;
+    width: 50vw;
   }
   
-  .TextAnimation {
-    width: 13vw;
-    text-align: center;
-    animation: typing 5s steps(19) infinite alternate, blink 1s infinite;
-    white-space: nowrap;
-    border-right: 4px solid;
-    padding: 0.6vh;
-    font-size: 2vh;
-    overflow: hidden;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-      text-shadow: 3px 3px 6px yellow, 3px 3px 6px yellow, 3px 3px 6px yellow;
-      color: yellow;
-    }
-  
-    to {
-      color: green;
-      text-shadow: 3px 3px 6px green;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  
-    100% {
-      /* width: 0; */
-    }
-  }
-  
-  
-  /* Footer Section Starts From Here */
-  .FooterSection {
-    background-color: rgb(39, 37, 37);
-    color: white;
-    padding: 3vh;
-  }
-  
-  .Container {
-    /* text-align: center; */
+  &_right {
+    padding: 3rem;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
-  
-    margin: 0vh 8vh;
-  }
-  
-  .Left_container h2 {
-    letter-spacing: 0.2vh;
-    text-align: left;
-  }
-  
-  .Left_container h3 {
-    letter-spacing: 0.3vh;
-    color: red;
-  }
-  
-  .Left_container p {
-    text-decoration: underline;
-    text-underline-offset: 1vh;
-  }
-  
-  .Right_container h3 {
-    letter-spacing: 0.2vh;
-  }
-  
-  .SocialMedia_container div {
-    display: flex;
-    padding: 1vh;
-    cursor: pointer;
-  }
-  
-  .FooterSection {
-    font-size: 2vh;
-  }
-  
-  .FooterSection img {
-    width: 3.5vh;
-  
-  }
-  
-  .socialLinks img {
-    margin-right: 1vh;
-  }
-  
-  .CreatorVaibhav {
-    letter-spacing: 0.3vh;
-    text-align: center;
-  }
-  
-  .SocialMedia_container a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .SocialMedia_container a:hover {
-    color: gray;
-  }
-  
-  /* Mobile View Starts From Here */
-  @media screen and (max-width: 609px) {
-    .Container {
-      margin: 0vh;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-  
-    .Left_container {
-      font-size: 1.6vh;
-    }
-  
-    .Left_container h3 {
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-  
-    .Left_container p {
-      text-decoration: none;
-      margin-top: -2vh;
-    }
-  
-    .TextAnimation_Container {
-      margin: 0vh;
-    }
-  
-    .TextAnimation {
-      width: 53vw;
+    align-items: center;
+    flex-direction: column;
+
+    &_social {
+
+      &>a {
+        &>img {
+          height: 2rem;
+          margin: 1rem;
+        }
+      }
     }
   }
+}
