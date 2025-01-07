@@ -726,12 +726,14 @@
 
 @keyframes bordernameonly {
   0% {
-    opacity: 0.1;
+    /* opacity: 0.1; */
   }
   100% {
     stroke-dasharray: 100 0;
-    opacity: 1;
-    filter: drop-shadow(0 0px 5rem rgb(65, 56, 56)) drop-shadow(0 0px 3rem rgb(95, 89, 89));
+    /* opacity: 1; */
+    /* filter:  */
+    /* drop-shadow(0 0px 5rem white)  */
+    /* drop-shadow(0 0px 3rem white)   */
   }
 }
 .central > img {
@@ -757,6 +759,7 @@
   top: -4rem;
   left: 31%;
   animation-delay: 0s;
+  /* background-color: none; */
 }
 
 .node2 {
@@ -777,21 +780,20 @@
   animation-delay: 1.6s;
 }
 
-/* @keyframes connect {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-} */
+@keyframes connect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .line {
   position: absolute;
   width: 2px;
-  height: 5rem;
   background-color: #4CAF50;
   transform-origin: top center;
   animation: lineGlow 2s infinite;
@@ -821,7 +823,31 @@
   transform: rotate(90deg);
 }
 
-@keyframes lineGlow {
+/* @keyframes lineGlow {
+    0% {
+        background-color: #4CAF50;
+        opacity: 0;
+        box-shadow: 0 0 5px 1px #4CAF50;
+        height: 0rem;
+        color: #4CAF50;
+    }
+    50% {
+        background-color: #4CAF50;
+        box-shadow: 0 0 5px 1px #4CAF50;
+        opacity: 1;
+        height: 5rem;
+        color: #4CAF50;
+    }
+    100% {
+        opacity: 0;
+        height: 6rem;
+    }
+} */
+.line1 {
+  animation: line1_animation 100ms infinite;
+}
+
+@keyframes line1_animation {
   0% {
     background-color: #4CAF50;
     opacity: 0;
@@ -833,12 +859,84 @@
     background-color: #4CAF50;
     box-shadow: 0 0 5px 1px #4CAF50;
     opacity: 1;
-    height: 4rem;
+    height: 7rem;
     color: #4CAF50;
   }
   100% {
     opacity: 0;
-    height: 6rem;
+    height: 9rem;
+  }
+}
+.line2 {
+  animation: line2_animation 2ms infinite;
+}
+
+@keyframes line2_animation {
+  0% {
+    background-color: #4CAF50;
+    opacity: 0;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    height: 0rem;
+    color: #4CAF50;
+  }
+  50% {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    opacity: 1;
+    height: 7rem;
+    color: #4CAF50;
+  }
+  100% {
+    opacity: 0;
+    height: 9rem;
+  }
+}
+.line3 {
+  animation: line3_animation 4s infinite;
+}
+
+@keyframes line3_animation {
+  0% {
+    background-color: #4CAF50;
+    opacity: 0;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    height: 0rem;
+    color: #4CAF50;
+  }
+  50% {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    opacity: 1;
+    height: 7rem;
+    color: #4CAF50;
+  }
+  100% {
+    opacity: 0;
+    height: 9rem;
+  }
+}
+.line4 {
+  animation: line4_animation 2s infinite;
+}
+
+@keyframes line4_animation {
+  0% {
+    background-color: #4CAF50;
+    opacity: 0;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    height: 0rem;
+    color: #4CAF50;
+  }
+  50% {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    opacity: 1;
+    height: 7rem;
+    color: #4CAF50;
+  }
+  100% {
+    opacity: 0;
+    height: 9rem;
   }
 }
 
