@@ -440,6 +440,88 @@
     font-size: 2vh;
   }
 }
+.lightning-effect {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.lightning-effect span {
+  display: inline-block;
+  animation: lightning 5s infinite;
+}
+
+/* Keyframes for the lightning effect */
+@keyframes lightning {
+  0% {
+    transform: scale(1);
+    text-shadow: none;
+  }
+  50% {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 3px red, 3px 3px 3px blue, 4px 4px 3px red;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+    text-shadow: 2px 2px 23px red, 3px 3px 23px blue, 4px 4px 23px red, 4px 4px 23px yellow;
+  }
+}
+/* Apply a delay for each letter */
+.lightning-effect span:nth-child(1) {
+  animation-delay: 0s;
+  rotate: 360deg;
+}
+
+.lightning-effect span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.lightning-effect span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.lightning-effect span:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.lightning-effect span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.lightning-effect span:nth-child(6) {
+  animation-delay: 2s;
+}
+
+.lightning-effect span:nth-child(7) {
+  animation-delay: 2.4s;
+}
+
+.lightning-effect span:nth-child(8) {
+  animation-delay: 2.8s;
+}
+
+.lightning-effect span:nth-child(9) {
+  animation-delay: 3.2s;
+}
+
+.lightning-effect span:nth-child(10) {
+  animation-delay: 3.6s;
+}
+
+.lightning-effect span:nth-child(11) {
+  animation-delay: 4s;
+}
+
+.lightning-effect span:nth-child(12) {
+  animation-delay: 4.4s;
+}
+
+.lightning-effect span:nth-child(13) {
+  animation-delay: 5s;
+}
+
 .Myblogs_heading h3 {
   text-align: center;
   font-size: 2rem;
@@ -621,6 +703,143 @@
 .footer-section_right_social > a > img {
   height: 2rem;
   margin: 1rem;
+}
+
+.server {
+  position: absolute;
+  bottom: 5rem;
+  left: 8rem;
+  width: 150px;
+  height: 150px;
+}
+
+.central {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: bordernameonly 2s infinite;
+}
+
+@keyframes bordernameonly {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    stroke-dasharray: 100 0;
+    opacity: 1;
+    filter: drop-shadow(0 0px 5rem rgb(65, 56, 56)) drop-shadow(0 0px 3rem rgb(95, 89, 89));
+  }
+}
+.central > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  z-index: 100;
+}
+
+.node {
+  position: absolute;
+  animation: connect 2s infinite;
+}
+
+.node > img {
+  position: relative;
+  height: 2.5rem;
+  z-index: 2;
+}
+
+.node1 {
+  top: -4rem;
+  left: 31%;
+  animation-delay: 0s;
+}
+
+.node2 {
+  top: 45%;
+  left: -6rem;
+  animation-delay: 2.5s;
+}
+
+.node3 {
+  bottom: -5rem;
+  left: 30%;
+  animation-delay: 1.3s;
+}
+
+.node4 {
+  top: 45%;
+  right: -4rem;
+  animation-delay: 1.6s;
+}
+
+/* @keyframes connect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
+.line {
+  position: absolute;
+  width: 2px;
+  height: 5rem;
+  background-color: #4CAF50;
+  transform-origin: top center;
+  animation: lineGlow 2s infinite;
+}
+
+.node1 .line {
+  top: 20px;
+  left: 50%;
+  transform: rotate(0deg);
+}
+
+.node2 .line {
+  left: 20px;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+
+.node3 .line {
+  bottom: 20px;
+  left: 45%;
+  transform: rotate(0deg);
+}
+
+.node4 .line {
+  right: 20px;
+  top: 40%;
+  transform: rotate(90deg);
+}
+
+@keyframes lineGlow {
+  0% {
+    background-color: #4CAF50;
+    opacity: 0;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    height: 0rem;
+    color: #4CAF50;
+  }
+  50% {
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px 1px #4CAF50;
+    opacity: 1;
+    height: 4rem;
+    color: #4CAF50;
+  }
+  100% {
+    opacity: 0;
+    height: 6rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

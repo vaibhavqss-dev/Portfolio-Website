@@ -132,3 +132,105 @@
     font-size: 2vh;
   }
 }
+
+// ///////////////////
+// banner section goes here...
+// 
+
+
+.lightning-effect {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.lightning-effect span {
+  display: inline-block;
+  animation: lightning 5s infinite;
+}
+
+/* Keyframes for the lightning effect */
+@keyframes lightning {
+  0% {
+      transform: scale(1);
+      // color: lime;
+      text-shadow: none;
+  }
+  50% {
+      transform: scale(1.2);
+      text-shadow: 2px 2px 3px red, 3px 3px 3px blue, 4px 4px 3px red;
+
+      // color: yellow;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+    text-shadow: 2px 2px 23px red, 3px 3px 23px blue, 4px 4px 23px red, 4px 4px 23px yellow;
+}
+}
+
+/* Apply a delay for each letter */
+.lightning-effect span:nth-child(1) {
+  animation-delay: 0s;
+  rotate: 360deg;
+  // color: lime;
+}
+
+.lightning-effect span:nth-child(2) {
+  animation-delay: 0.4s;
+  // color: purple;
+}
+
+.lightning-effect span:nth-child(3) {
+  animation-delay: 0.8s;
+  // color: cyan;
+}
+
+.lightning-effect span:nth-child(4) {
+  animation-delay: 1.2s;
+  // color: orange;
+}
+
+.lightning-effect span:nth-child(5) {
+  animation-delay: 1.6s;
+  // color: yellow;
+}
+
+.lightning-effect span:nth-child(6) {
+  animation-delay: 2s;
+  // color: red;
+}
+
+.lightning-effect span:nth-child(7) {
+  animation-delay: 2.4s;
+  // color: pink;
+}
+
+.lightning-effect span:nth-child(8) {
+  animation-delay: 2.8s;
+  // color: blue;
+}
+
+.lightning-effect span:nth-child(9) {
+  animation-delay: 3.2s;
+  // color: green;
+}
+
+.lightning-effect span:nth-child(10) {
+  animation-delay: 3.6s;
+  // color: violet;
+}
+
+.lightning-effect span:nth-child(11) {
+  animation-delay: 4s;
+  // color: gold;
+}
+.lightning-effect span:nth-child(12) {
+  animation-delay: 4.4s;
+  // color: gold;
+}
+.lightning-effect span:nth-child(13) {
+  animation-delay: 5s;
+  // color: gold;
+}
